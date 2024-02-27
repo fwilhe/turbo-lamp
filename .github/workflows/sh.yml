@@ -10,7 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: Run a multi-line script
+    - name: crun --version
       run: |
         crun --version
+
+
+    - name: podman --version
+      run: |
+        podman --version
+
+    - name: podman info
+      run: |
         podman info
