@@ -28,3 +28,5 @@ jobs:
     - name: podman info
       run: |
         podman info
+
+    - run: podman build -t foo .
